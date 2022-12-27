@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load get_total_applicant %}
+{% block content %}
+
+<section class="section-hero overlay inner-page bg-image"
+    style="background-image: url('{% static 'images/hero_1.jpg' %}');" id="home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="text-white font-weight-bold">About</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-5">
+                {% include 'messages.html' %}
+
+              <div>This is for employers and employees.</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+    <script src="{% static 'js/sweet-alert.js' %}"></script>
+    <script src="{% static 'js/sweet-alert-ajax.js' %}"></script>
+{% endblock %}
+
+
